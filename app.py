@@ -8,7 +8,8 @@ from st_aggrid.shared import GridUpdateMode
 import xlrd, os
 import base64
 import io
-
+xlrd.xlsx.ensure_elementtree_imported(False, None)
+xlrd.xlsx.Element_has_iter = True
 
 def main():
     st.set_page_config(page_title='Data Recon Web Application', layout="wide")
